@@ -1,4 +1,4 @@
-public class MyThread_1 implements Runnable {
+public class ThreadCounter implements Runnable {
     public static int counter = 0;
 
     @Override

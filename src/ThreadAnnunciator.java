@@ -1,4 +1,4 @@
-public class MyThread_2 implements Runnable {
+public class ThreadAnnunciator implements Runnable {
 
     @Override
     public void run() {
@@ -10,7 +10,6 @@ public class MyThread_2 implements Runnable {
                     e.printStackTrace();
                 }
                 System.out.println("Прошло 5 секунд");
-                //y.notify();
             }
         }
     }

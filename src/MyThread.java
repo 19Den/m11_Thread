@@ -1,8 +1,10 @@
 import java.util.function.IntConsumer;
 
 public class MyThread {
+    static final Integer y = 0;
+
     public static void main(String[] args) throws InterruptedException {
-        FizzBuzz fizzBuzz = new FizzBuzz(15);
+        /*FizzBuzz fizzBuzz = new FizzBuzz(15);
 
         Runnable printFizz = () -> System.out.println("fizz");
         Runnable printBuzz = () -> System.out.println("buzz");
@@ -44,15 +46,15 @@ public class MyThread {
         threadA.start();
         threadB.start();
         threadC.start();
-        threadD.start();
+        threadD.start();*/
 
 
-        //Ex1
-        /*Runnable t1 = new MyThread_1();
-        Runnable t2 = new MyThread_2();
+        //Ex1:
+        Runnable t1 = new ThreadCounter();
+        Runnable t2 = new ThreadAnnunciator();
         Thread th1 = new Thread(t1);
         Thread th2 = new Thread(t2);
         th1.start();
-        th2.start();*/
+        th2.start();
     }
 }
